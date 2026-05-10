@@ -1,32 +1,27 @@
+---
+author: "Kyle Jones"
+date_published: "August 23, 2025"
+date_exported_from_medium: "November 10, 2025"
+canonical_link: "https://medium.com/@kyle-t-jones/automate-excel-chart-making-with-python-d33f4303f95a"
+---
+
 # Automate Excel Chart Making with Python Excel remains the world's most common business tool. Analysts use it for
 reports, charts, and dashboards every day. But if you've ever...
 
 ### Automate Excel Chart Making with Python
-Excel remains the world's most common business tool. Analysts use it for
-reports, charts, and dashboards every day. But if you've ever updated
-the same report every week, copied the same formulas into multiple
-files, or redrawn the same chart for different regions, you know how
-painful and repetitive Excel can become.
+Excel remains the world's most common business tool. Analysts use it for reports, charts, and dashboards every day. But if you've ever updated the same report every week, copied the same formulas into multiple files, or redrawn the same chart for different regions, you know how painful and repetitive Excel can become.
 
-Python changes that. With libraries like **Pandas** and **Openpyxl**,
-you can automate the entire workflow: filter data, build pivot tables,
-format worksheets, and even generate charts inside Excel automatically.
+Python changes that. With libraries like **Pandas** and **Openpyxl**, you can automate the entire workflow: filter data, build pivot tables, format worksheets, and even generate charts inside Excel automatically.
 
-This tutorial shows how to create quarterly sales charts in Excel with
-Python. We'll start with one region, then scale up to generate polished
-reports for every region in the dataset.
+This tutorial shows how to create quarterly sales charts in Excel with Python. We'll start with one region, then scale up to generate polished reports for every region in the dataset.
 
 ### Why Automate Excel with Python?
-Manually updating Excel reports is error-prone. It's easy to miscopy a
-formula, miss a row, or overwrite the wrong sheet. With Python, you can:
+Manually updating Excel reports is error-prone. It's easy to miscopy a formula, miss a row, or overwrite the wrong sheet. With Python, you can:
 
 - **Save time** --- a script runs in seconds.
-- **Ensure consistency** --- the same transformations every
-  time.
-- **Scale easily** --- produce reports for 1, 10, or 100 regions
-  without more work.
-- **Extend Excel** --- combine Python's analytical power with Excel's
-  familiar interface.
+- **Ensure consistency** --- the same transformations every time.
+- **Scale easily** --- produce reports for 1, 10, or 100 regions without more work.
+- **Extend Excel** --- combine Python's analytical power with Excel's familiar interface.
 
 Automation doesn't replace Excel --- it makes Excel better.
 
@@ -52,8 +47,7 @@ df.head()
 ```
 
 ### Step 3: Build a Pivot Table
-Let's filter to the East region and build quarterly sales totals by
-product type.
+Let's filter to the East region and build quarterly sales totals by product type.
 
 ``` 
 filtered = df[df['Region'] == 'East']
@@ -76,8 +70,7 @@ quarterly_sales.to_excel(file_path, sheet_name='Quarterly Sales', startrow=3)
 ```
 
 ### Step 5: Format the Sheet and Add a Chart
-We can now load the workbook, style it, and insert a bar chart directly
-into Excel.
+We can now load the workbook, style it, and insert a bar chart directly into Excel.
 
 ``` 
 wb = load_workbook(file_path)
@@ -105,9 +98,7 @@ wb.save(filename=file_path)
 ```
 
 ### Step 6: Automate for All Regions
-The real power comes when you scale. Instead of repeating the process by
-hand, you can loop over every region in the dataset and generate
-separate Excel reports with charts included.
+The real power comes when you scale. Instead of repeating the process by hand, you can loop over every region in the dataset and generate separate Excel reports with charts included.
 
 ``` 
 regions = list(df['Region'].unique())
@@ -153,16 +144,11 @@ for region in regions:
 Here's what one of the automatically generated charts looks like:
 
 
-And here's a diagram showing how Python automates the
-workflow --- taking multiple datasets and producing polished Excel
-reports:
+And here's a diagram showing how Python automates the workflow --- taking multiple datasets and producing polished Excel reports:
 
 
 ### Why This Matters
-Think about the hours saved: instead of manually building reports for
-each region, you now have a script that can generate them all in one go.
-Beyond sales data, this approach works for finance reports, HR
-dashboards, inventory tracking, or any recurring business report.
+Think about the hours saved: instead of manually building reports for each region, you now have a script that can generate them all in one go. Beyond sales data, this approach works for finance reports, HR dashboards, inventory tracking, or any recurring business report.
 
 Python doesn't replace Excel --- it supercharges it.
 
@@ -175,12 +161,4 @@ In this tutorial, you learned how to:
 - Add charts directly into Excel
 - Scale the process to every region in the dataset
 
-The next time you face repetitive Excel work, don't copy and paste.
-Write a script once, and let Python do the work forever.
-::::::::By [Kyle Jones](https://medium.com/@kyle-t-jones) on
-[August 23, 2025](https://medium.com/p/d33f4303f95a).
-
-[Canonical
-link](https://medium.com/@kyle-t-jones/automate-excel-chart-making-with-python-d33f4303f95a)
-
-Exported from [Medium](https://medium.com) on November 10, 2025.
+The next time you face repetitive Excel work, don't copy and paste. Write a script once, and let Python do the work forever.
