@@ -11,17 +11,17 @@ reports, charts, and dashboards every day. But if you've ever...
 ### Automate Excel Chart Making with Python
 Excel remains the world's most common business tool. Analysts use it for reports, charts, and dashboards every day. But if you've ever updated the same report every week, copied the same formulas into multiple files, or redrawn the same chart for different regions, you know how painful and repetitive Excel can become.
 
-Python changes that. With libraries like **Pandas** and **Openpyxl**, you can automate the entire workflow: filter data, build pivot tables, format worksheets, and even generate charts inside Excel automatically.
+Python changes that. With libraries like Pandas and Openpyxl, you can automate the entire workflow: filter data, build pivot tables, format worksheets, and even generate charts inside Excel automatically.
 
 This tutorial shows how to create quarterly sales charts in Excel with Python. We'll start with one region, then scale up to generate polished reports for every region in the dataset.
 
 ### Why Automate Excel with Python?
 Manually updating Excel reports is error-prone. It's easy to miscopy a formula, miss a row, or overwrite the wrong sheet. With Python, you can:
 
-- **Save time** --- a script runs in seconds.
-- **Ensure consistency** --- the same transformations every time.
-- **Scale easily** --- produce reports for 1, 10, or 100 regions without more work.
-- **Extend Excel** --- combine Python's analytical power with Excel's familiar interface.
+- Save time --- a script runs in seconds.
+- Ensure consistency --- the same transformations every time.
+- Scale easily --- produce reports for 1, 10, or 100 regions without more work.
+- Extend Excel --- combine Python's analytical power with Excel's familiar interface.
 
 Automation doesn't replace Excel --- it makes Excel better.
 
