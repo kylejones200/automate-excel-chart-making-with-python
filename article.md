@@ -65,7 +65,7 @@ print(quarterly_sales.head())
 
 ### Step 4: Save the Pivot Table to Excel
 ``` 
-file_path = '/Users/jnesnky/Downloads/test.xlsx'
+file_path = 'data/test.xlsx'
 quarterly_sales.to_excel(file_path, sheet_name='Quarterly Sales', startrow=3)
 ```
 
@@ -102,7 +102,7 @@ The real power comes when you scale. Instead of repeating the process by hand, y
 
 ``` 
 regions = list(df['Region'].unique())
-folder_path = '/Users/jnesnky/Downloads/test'
+folder_path = 'data/test'
 
 
 for region in regions:

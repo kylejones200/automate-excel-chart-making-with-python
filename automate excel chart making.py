@@ -41,7 +41,7 @@ def main():
     # --- code cell ---
 
     # Section 04 - Creating and Excel Workbook
-    file_path = "/Users/jnesnky/Downloads/test.xlsx"
+    file_path = "data/test.xlsx"
     quarterly_sales.to_excel(file_path, sheet_name="Quarterly Sales", startrow=3)
 
 
@@ -83,7 +83,7 @@ def main():
     regions = list(df["Region"].unique())
 
     # Section 09 - Looping Over All Regions
-    folder_path = "/Users/jnesnky/Downloads/test"
+    folder_path = "data/test"
 
     for region in regions:
         filtered = df[df["Region"] == f"{region}"]
