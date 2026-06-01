@@ -11,14 +11,7 @@ Python changes that. With libraries like Pandas and Openpyxl, you can automate t
 
 This tutorial shows how to create quarterly sales charts in Excel with Python. We'll start with one region, then scale up to generate polished reports for every region in the dataset.
 
-## About
 
-Place the code for this article in this repository.
-The original article export is saved as `article.md`.
-
-## Files
-
-Add your `.ipynb`, `.py`, `.yaml`, `.js`, `.ts`, or other project files here.
 
 ## Disclaimer
 
